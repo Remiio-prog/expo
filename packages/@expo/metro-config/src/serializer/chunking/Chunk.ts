@@ -401,10 +401,14 @@ export class Chunk {
             Object.entries(jsAsset.metadata.paths).map(([key, value]) => [
               key,
               Object.fromEntries(
-                Object.entries(value).map(([key, value]) => [
-                  key,
-                  value ? value.replace(/\.js$/, '.hbc') : value,
-                ])
+                Object.entries(value).map(([key, value]) => {
+                  // BitSet arrays are web-only. Keep the legacy Hermes conversion scalar.
+                  assert(
+                    value == null || typeof value === 'string',
+                    'Hermes async paths must remain scalar.'
+                  );
+                  return [key, value ? value.replace(/\.js$/, '.hbc') : value];
+                })
               ),
             ])
           );
