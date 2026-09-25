@@ -1,0 +1,373 @@
+Build a mobile-friendly app called **Remiio**.
+
+Remiio is a simple, cute, friendly personal planner and reminder app. The most important idea is that **the user decides everything**. Remiio should never tell the user what they should do. The user creates their own plans, chooses their own times, and decides when something is finished.
+
+The visual identity should be based around a cute reminder theme such as **⏰💗** — a friendly clock combined with a small heart. The app should feel warm, calm, modern, and welcoming without looking childish.
+
+## MAIN GOAL
+
+The user should be able to open Remiio and quickly create plans such as:
+
+* Study for Math exam — 16:00–17:00
+* Study for English exam — 17:30–18:30
+* Study for Biology exam — 19:00–20:00
+* Football — 20:30–22:00
+* Clean my room — 14:00–14:30
+* Go out with friends — 15:00–18:00
+
+Remiio then reminds the user about their own plans.
+
+## USER ACCOUNTS AND LOGIN
+
+Add a simple account system.
+
+Users should be able to:
+
+* Create an account
+* Log in
+* Log out
+* Reset a forgotten password
+* Stay logged in between sessions
+* View their own profile
+* Change their display name
+* Delete their account
+
+The first screen for a logged-out user should be a beautiful, simple Remiio welcome/login screen.
+
+Include:
+
+**Remiio**
+⏰💗
+
+"Your plans. Your time. Your choice."
+
+Buttons:
+
+* Log In
+* Create Account
+
+Login should use:
+
+* Email
+* Password
+
+Sign-up should use:
+
+* Name
+* Email
+* Password
+* Confirm password
+
+Also include:
+
+* Forgot password?
+* Log out
+
+Do not add complicated social features.
+
+## IMPORTANT DATA PRIVACY
+
+Each user's activities, reminders, settings, and completed tasks must belong only to that user.
+
+A user must NEVER be able to see another user's activities or personal information.
+
+Use secure authentication and secure database access.
+
+Do not store passwords as plain text.
+
+If a user deletes their account, their personal Remiio data should also be deleted.
+
+## MAIN APP NAVIGATION
+
+After login, show the main Remiio app.
+
+Use simple navigation:
+
+1. Today
+2. Add
+3. Reminders
+4. Settings
+
+Keep navigation simple and mobile-friendly.
+
+## PAGE 1 — TODAY
+
+Create a beautiful home screen called **Today**.
+
+Show:
+
+* Today's date
+* A friendly greeting
+* All activities planned for today
+* Start time
+* End time
+* Reminder information
+* A simple progress indicator
+* A Done button for each activity
+
+Example:
+
+📚 Study for Math exam
+16:00 — 17:00
+🔔 Reminder: 30 minutes before
+[Mark as Done]
+
+When an activity is completed, make it visually clear that it is completed.
+
+Do not automatically create plans for the user.
+
+The user decides what appears on Today.
+
+## PAGE 2 — ADD ACTIVITY
+
+Create a large **+ Add Activity** button.
+
+When the user clicks it, show:
+
+**What are you doing?**
+Text field
+
+**Date**
+Date picker
+
+**Start time**
+Time picker
+
+**End time**
+Time picker
+
+**Reminder**
+Options:
+
+* At the exact time
+* 10 minutes before
+* 30 minutes before
+* 1 hour before
+
+**Repeat**
+Options:
+
+* Does not repeat
+* Every day
+* Every week
+
+Then show:
+
+**Save Activity**
+
+After saving, the activity should immediately appear on the appropriate day.
+
+## ACTIVITY MANAGEMENT
+
+The user must be able to:
+
+* Add an activity
+* Edit an activity
+* Delete an activity
+* Mark an activity as Done
+* Undo Done if necessary
+* Change its time
+* Change its reminder
+* Change its repeat schedule
+
+Show a confirmation before permanently deleting an activity.
+
+## PAGE 3 — REMINDERS
+
+Create a simple Reminders page.
+
+Show upcoming reminders and their related activities.
+
+When a reminder is due, show a notification if the device/browser allows notifications.
+
+Examples:
+
+"🔔 It's time to study for your Math exam."
+
+"⏰ Your English study time starts in 30 minutes."
+
+The reminder should feel friendly and helpful.
+
+It should NOT sound strict, controlling, or like a parent.
+
+Where supported by the device/browser, allow spoken reminders such as:
+
+"It's time to study for your Math exam."
+
+If notifications or spoken reminders are unavailable because of browser/device restrictions, the app should continue working normally.
+
+## PAGE 4 — SETTINGS
+
+Keep Settings very simple.
+
+Include:
+
+* Notifications on/off
+* Sound on/off
+* Spoken reminders on/off
+* Dark mode on/off
+* Profile
+* Change password
+* Log out
+* Delete account
+
+Do not add complicated settings.
+
+## PROFILE
+
+Create a simple Profile page.
+
+Show:
+
+* Display name
+* Email address
+
+Allow the user to change their display name.
+
+Include a clear Log Out button.
+
+Include Delete Account at the bottom with a confirmation step.
+
+## DESIGN
+
+Make Remiio feel:
+
+* Cute
+* Modern
+* Calm
+* Friendly
+* Clean
+* Simple
+* Comfortable
+* Suitable for teenagers and adults
+
+Use a soft, pleasant color palette.
+
+Use:
+
+* Rounded cards
+* Rounded buttons
+* Soft shadows
+* Large readable text
+* Friendly icons
+* Plenty of spacing
+
+Suggested visual language:
+
+⏰ reminders
+💗 friendly/caring feeling
+📚 study
+📝 tasks
+🧪 exams/science
+⚽ sports
+🧹 cleaning
+👥 friends
+🔔 notifications
+✅ completed
+
+The app should NOT feel like a complicated business calendar.
+
+## APP ICON
+
+Create a simple Remiio app icon concept using:
+
+**⏰ + 💗**
+
+The icon should look like a friendly reminder clock with a small heart.
+
+Keep it minimal and recognizable at small sizes.
+
+Use the name:
+
+**Remiio**
+
+The logo/icon should work on both iPhone and Android.
+
+## RESPONSIVE DESIGN
+
+The app must work well on:
+
+* iPhone
+* Android phones
+* Tablets
+* Desktop/laptop browsers
+
+Prioritize the mobile experience.
+
+Buttons and text should be easy to tap and read on a phone.
+
+## FIRST VERSION
+
+Keep the first version simple.
+
+Do NOT add:
+
+* Payments
+* Subscriptions
+* Premium plans
+* Advertising
+* Family accounts
+* Parent controls
+* Social feeds
+* Chat
+* Complex gamification
+
+The app should focus on personal planning and reminders.
+
+## DATABASE
+
+Use a proper authenticated database so each user has their own data.
+
+Store:
+
+* User profile
+* Activities
+* Activity dates
+* Start/end times
+* Reminder preferences
+* Repeat schedule
+* Completion status
+* Notification settings
+* Sound settings
+* Spoken reminder setting
+* Dark mode setting
+
+Every database record containing personal data must be associated with the logged-in user.
+
+## IMPORTANT TECHNICAL REQUIREMENTS
+
+Build a functional application, not just a visual mockup.
+
+The user must be able to:
+
+1. Create an account.
+2. Log in.
+3. Log out.
+4. Reset their password.
+5. Add an activity.
+6. See it on Today.
+7. Edit it.
+8. Delete it.
+9. Mark it as Done.
+10. Choose a reminder.
+11. Choose a repeat schedule.
+12. See activities after closing and reopening the app.
+13. Change settings.
+14. Use dark mode.
+15. Manage their profile.
+
+Keep the code and project structure organized so that more features can be added later.
+
+## VERY IMPORTANT
+
+Do not remove existing working Remiio functionality when adding authentication.
+
+Before making changes, inspect the existing project and reuse the existing structure where possible.
+
+Build the simplest reliable version first.
+
+The final result should feel like a real, polished app called **Remiio**, not a complicated productivity tool.
+
+The core idea should always remain:
+
+**"Your plans. Your time. Your choice."**
